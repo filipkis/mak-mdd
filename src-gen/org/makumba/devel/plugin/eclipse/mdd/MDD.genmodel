@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.makumba.devel.plugin.eclipse.mdd/src-gen"
+    editDirectory="/org.makumba.devel.plugin.eclipse.mdd.edit/src" editorDirectory="/org.makumba.devel.plugin.eclipse.mdd.editor/src"
+    modelPluginID="org.makumba.devel.plugin.eclipse.mdd" forceOverwrite="true" modelName="MDD"
+    updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="org.makumba.devel.plugin.eclipse.mdd.edit"
+    editorPluginID="org.makumba.devel.plugin.eclipse.mdd.editor">
+  <genPackages prefix="Editor" basePackage="org.makumba.devel.plugin.eclipse.mdd"
+      disposableProviderFactory="true" ecorePackage="MDD.ecore#/">
+    <genClasses ecoreClass="MDD.ecore#//dataDefinition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//dataDefinition/d"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//declaration"/>
+    <genClasses ecoreClass="MDD.ecore#//fieldDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//fieldDeclaration/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//fieldDeclaration/modifiers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//fieldDeclaration/typedef"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//modifiers">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//modifiers/unique"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//modifiers/fixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//modifiers/notNull"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//modifiers/notEmpty"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//fieldType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//fieldType/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MDD.ecore#//fieldType/typeDec"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//intEnum">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//intEnum/values"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//charEnum">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//charEnum/values"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//enumValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//enumValue/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//enumValue/value"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//charType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//charType/length"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//pointer"/>
+    <genClasses ecoreClass="MDD.ecore#//setType"/>
+    <genClasses ecoreClass="MDD.ecore#//subFieldDeclaration">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MDD.ecore#//subFieldDeclaration/subFieldOf"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//subFieldDeclaration/d"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//titleDeclaration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//titleDeclaration/title"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//title">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//title/name"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//includeDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//includeDeclaration/importedNamespace"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//typeDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//typeDeclaration/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//typeDeclaration/fieldType"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//validationRuleDeclaration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//validationRuleDeclaration/errorMessage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//validationRuleDeclaration/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//validationRuleDeclaration/args"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//comparisonValidationRuleDeclaration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//comparisonValidationRuleDeclaration/comparisonExp"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//comparisonExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//comparisonExpression/lhs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//comparisonExpression/o"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//comparisonExpression/rhs"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//comparisonPart">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//comparisonPart/t"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//comparisonPart/n"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//comparisonPart/df"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//comparisonPart/u"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//comparisonPart/l"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//comparisonPart/d"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//upperFunction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//upperFunction/t"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//lowerFunction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//lowerFunction/t"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//rangeValidationRuleDeclaration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//rangeValidationRuleDeclaration/range"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//regexValidationRuleDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//regexValidationRuleDeclaration/exp"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//range">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//range/f"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//range/t"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//uniquenessValidationRuleDeclaration"/>
+    <genClasses ecoreClass="MDD.ecore#//errorMessage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//errorMessage/message"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//nativeValidationRuleDeclaration">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MDD.ecore#//nativeValidationRuleDeclaration/field"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//nativeValidationRuleDeclaration/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//nativeValidationRuleDeclaration/message"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//functionDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//functionDeclaration/b"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//functionDeclaration/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//functionDeclaration/arg"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//functionDeclaration/body"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//functionDeclaration/m"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//functionArgumentDeclaration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//functionArgumentDeclaration/f"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//functionArgumentBody">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//functionArgumentBody/name"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//functionCall">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//functionCall/f"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//functionArguments">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//functionArguments/a"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//functionBody">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//functionBody/s"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//functionBody/e"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//statement"/>
+    <genClasses ecoreClass="MDD.ecore#//unionRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//unionRule/q"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//queryRule"/>
+    <genClasses ecoreClass="MDD.ecore#//selectFrom">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//selectFrom/where"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//selectFrom/groupBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//selectFrom/orderBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//selectFrom/s"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//selectFrom/from"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//selectClause"/>
+    <genClasses ecoreClass="MDD.ecore#//newExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//newExpression/p"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//newExpression/s"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//fromClause">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//fromClause/fromRange"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//fromClause/fromJoin"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//fromJoin"/>
+    <genClasses ecoreClass="MDD.ecore#//withClause">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//withClause/e"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//fromRange">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//fromRange/alias"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//fromRange/p"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//fromClassOrOuterQueryPath">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//fromClassOrOuterQueryPath/w"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//fromClassOrOuterQueryPath/asAlias"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//fromClassOrOuterQueryPath/propertyFetch"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//inCollectionElementsDeclaration"/>
+    <genClasses ecoreClass="MDD.ecore#//asAlias">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//asAlias/alias"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//groupByClause">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//groupByClause/e"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//groupByClause/h"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//orderByClause">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//orderByClause/o"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//orderElement"/>
+    <genClasses ecoreClass="MDD.ecore#//havingClause">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//havingClause/e"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//whereClause">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//whereClause/e"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//selectedPropertiesList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//selectedPropertiesList/a"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//aliasedExpression"/>
+    <genClasses ecoreClass="MDD.ecore#//expression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//expression/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//expression/v"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//logicalOrExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//logicalOrExpression/l"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//logicalAndExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//logicalAndExpression/n"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//negatedExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//negatedExpression/n"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//equalityExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//equalityExpression/r"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//relationalExpression"/>
+    <genClasses ecoreClass="MDD.ecore#//likeEscape">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//likeEscape/c"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//betweenList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//betweenList/c"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//concatenation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//concatenation/a"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//concatenation/i"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//concatenation/b"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//concatenation/c"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//concatenation/l"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//concatenation/p"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//additiveExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//additiveExpression/m"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//multiplyExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//multiplyExpression/u"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//unaryExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//unaryExpression/u"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//caseExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//caseExpression/w"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//caseExpression/e"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//caseExpression/a"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//whenClause">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//whenClause/whenExpr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//whenClause/thenExpr"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//altWhenClause">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//altWhenClause/w"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//altWhenClause/t"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//elseClause">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//elseClause/u"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//quantifiedExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//quantifiedExpression/s"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//atom"/>
+    <genClasses ecoreClass="MDD.ecore#//primaryExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//primaryExpression/e"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//primaryExpression/exp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//primaryExpression/ident"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//primaryExpression/s"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//expressionOrVector"/>
+    <genClasses ecoreClass="MDD.ecore#//vectorExpr">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//vectorExpr/e"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//identPrimary">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//identPrimary/e"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//aggregate">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//aggregate/a"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//compoundExpr">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//compoundExpr/e"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//compoundExpr/s"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//exprList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//exprList/e"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDD.ecore#//exprList/id"/>
+    </genClasses>
+    <genClasses ecoreClass="MDD.ecore#//selectCause">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//selectCause/s"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDD.ecore#//selectCause/n"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
