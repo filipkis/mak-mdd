@@ -5,9 +5,9 @@
 
   <extension point="org.eclipse.emf.ecore.generated_package">
     <package 
-       uri = "http://www.makumba.org/ide/mdd/Editor" 
+       uri = "http://www.makumba.org/devel/plugin/eclipse/mdd/MDD" 
        class = "org.makumba.devel.plugin.eclipse.mdd.editor.EditorPackage"
-       genModel = "org/makumba/MDD.genmodel" /> 
+       genModel = "org/makumba/devel/plugin/eclipse/mdd/MDD.genmodel" /> 
 	
   </extension>
 
